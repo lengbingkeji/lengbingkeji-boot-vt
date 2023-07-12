@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jeecgframework.boot</groupId>
-  <artifactId>jeecg-boot-parent</artifactId>
+  <artifactId>lengbingkeji-boot-parent</artifactId>
   <version>3.3.0</version>
   <packaging>pom</packaging>
-  <name>JEECG BOOT ${project.version}</name>
+  <name>LENGBINGKEJI BOOT ${project.version}</name>
 
   	<parent>
 	    <groupId>org.springframework.boot</groupId>
@@ -65,9 +65,9 @@
 	</properties>
 
 	<modules>
-        <module>jeecg-boot-base</module>
+        <module>lengbingkeji-boot-base</module>
         <module>lengbingkeji-boot-module-demo</module>
-        <module>jeecg-boot-module-system</module>
+        <module>lengbingkeji-boot-module-system</module>
 	</modules>
 
 	<distributionManagement>
@@ -147,63 +147,63 @@
 			<!-- system 模块-->
 			<dependency>
 				<groupId>org.jeecgframework.boot</groupId>
-				<artifactId>jeecg-boot-module-system</artifactId>
+				<artifactId>lengbingkeji-boot-module-system</artifactId>
 				<version>${jeecgboot.version}</version>
 			</dependency>
 
 			<!-- jeecg tools -->
 			<dependency>
 				<groupId>org.jeecgframework.boot</groupId>
-				<artifactId>jeecg-boot-base-tools</artifactId>
+				<artifactId>lengbingkeji-boot-base-tools</artifactId>
 				<version>${jeecgboot.version}</version>
 			</dependency>
 			<!-- jeecg core -->
 			<dependency>
 				<groupId>org.jeecgframework.boot</groupId>
-				<artifactId>jeecg-boot-base-core</artifactId>
+				<artifactId>lengbingkeji-boot-base-core</artifactId>
 				<version>${jeecgboot.version}</version>
 			</dependency>
 			<!-- system 单体 api -->
 			<dependency>
 				<groupId>org.jeecgframework.boot</groupId>
-				<artifactId>jeecg-system-local-api</artifactId>
+				<artifactId>lengbingkeji-system-local-api</artifactId>
 				<version>${jeecgboot.version}</version>
 			</dependency>
 			<!-- system 微服务 api -->
 			<dependency>
 				<groupId>org.jeecgframework.boot</groupId>
-				<artifactId>jeecg-system-cloud-api</artifactId>
+				<artifactId>lengbingkeji-system-cloud-api</artifactId>
 				<version>${jeecgboot.version}</version>
 			</dependency>
 
             <!--微服务启动依赖-->
             <dependency>
                 <groupId>org.jeecgframework.boot</groupId>
-                <artifactId>jeecg-boot-starter-cloud</artifactId>
+                <artifactId>lengbingkeji-boot-starter-cloud</artifactId>
                 <version>${jeecgboot.version}</version>
             </dependency>
 			<!--xxl-job定时任务-->
 			<dependency>
 				<groupId>org.jeecgframework.boot</groupId>
-				<artifactId>jeecg-boot-starter-job</artifactId>
+				<artifactId>lengbingkeji-boot-starter-job</artifactId>
 				<version>${jeecgboot.version}</version>
 			</dependency>
 			<!--redis分布式锁-->
 			<dependency>
 				<groupId>org.jeecgframework.boot</groupId>
-				<artifactId>jeecg-boot-starter-lock</artifactId>
+				<artifactId>lengbingkeji-boot-starter-lock</artifactId>
 				<version>${jeecgboot.version}</version>
 			</dependency>
 			<!--rabbitmq消息队列-->
 			<dependency>
 				<groupId>org.jeecgframework.boot</groupId>
-				<artifactId>jeecg-boot-starter-rabbitmq</artifactId>
+				<artifactId>lengbingkeji-boot-starter-rabbitmq</artifactId>
 				<version>${jeecgboot.version}</version>
 			</dependency>
 			<!--分库分表shardingsphere-->
 			<dependency>
 				<groupId>org.jeecgframework.boot</groupId>
-				<artifactId>jeecg-boot-starter-shardingsphere</artifactId>
+				<artifactId>lengbingkeji-boot-starter-shardingsphere</artifactId>
 				<version>${jeecgboot.version}</version>
 			</dependency>
 			<dependency>
@@ -486,8 +486,8 @@
 			</properties>
 			<modules>
 				<!-- 微服务模块 -->
-				<module>jeecg-boot-starter</module>
-				<module>jeecg-cloud-module</module>
+				<module>lengbingkeji-boot-starter</module>
+				<module>lengbingkeji-cloud-module</module>
 			</modules>
 		</profile>
     </profiles>

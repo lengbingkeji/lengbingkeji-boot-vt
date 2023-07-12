@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>jeecg-boot-parent</artifactId>
+        <artifactId>lengbingkeji-boot-parent</artifactId>
         <groupId>org.jeecgframework.boot</groupId>
         <version>3.3.0</version>
     </parent>
@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>org.jeecgframework.boot</groupId>
-            <artifactId>jeecg-boot-base-core</artifactId>
+            <artifactId>lengbingkeji-boot-base-core</artifactId>
         </dependency>
     </dependencies>
 
@@ -34,11 +34,11 @@
             <dependencies>
                 <dependency>
                     <groupId>org.jeecgframework.boot</groupId>
-                    <artifactId>jeecg-boot-starter-cloud</artifactId>
+                    <artifactId>lengbingkeji-boot-starter-cloud</artifactId>
                 </dependency>
                 <dependency>
                     <groupId>org.jeecgframework.boot</groupId>
-                    <artifactId>jeecg-boot-starter-job</artifactId>
+                    <artifactId>lengbingkeji-boot-starter-job</artifactId>
                 </dependency>
             </dependencies>
         </profile>
