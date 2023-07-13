@@ -68,7 +68,8 @@
         <module>lengbingkeji-boot-base</module>
         <module>lengbingkeji-boot-module-demo</module>
         <module>lengbingkeji-boot-module-system</module>
-	</modules>
+        <module>lengbingkeji-boot-module-lbkj</module>
+    </modules>
 
 	<distributionManagement>
 	  	<repository>
