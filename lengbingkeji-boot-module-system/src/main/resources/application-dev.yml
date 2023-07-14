@@ -8,7 +8,7 @@ server:
     include-message: ALWAYS
   servlet:
     #context-path: /jeecg-boot
-    context-path: /lengbingkeji-boot
+    context-path: /lengbingkeji-boot-vt
   compression:
     enabled: true
     min-response-size: 1024

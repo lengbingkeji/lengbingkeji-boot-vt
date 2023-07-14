@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Version 1.0
  */
 @RestController
-@RequestMapping("/hth/wzlh")
+@RequestMapping("/hlh/wzlh")
 @Slf4j
 public class HlhController {
     @GetMapping(value = "/wztolh")
