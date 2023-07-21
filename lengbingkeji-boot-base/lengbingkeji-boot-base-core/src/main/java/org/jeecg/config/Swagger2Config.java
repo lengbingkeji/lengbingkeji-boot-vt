@@ -79,6 +79,23 @@ public class Swagger2Config implements WebMvcConfigurer {
                 //.globalOperationParameters(setHeaderToken());
     }
 
+    @Bean(value = "lengbingkejiApi")
+    public Docket lengbingkejiApi() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .apiInfo(apiInfo()).groupName("lengbingkeji")//groupName("lengbingkeji")：分组名称
+                .select()
+                //此包路径下的类，才生成接口文档
+                .apis(RequestHandlerSelectors.basePackage("org.jeecg.modules.lengbingkeji"))//分组接口文档、包路径
+                //加了ApiOperation注解的类，才生成接口文档
+                .apis(RequestHandlerSelectors.withClassAnnotation(RestController.class))
+                .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
+                .paths(PathSelectors.any())
+                .build()
+                .securitySchemes(Collections.singletonList(securityScheme()))
+                .securityContexts(securityContexts());
+        //.globalOperationParameters(setHeaderToken());
+    }
+
     /***
      * oauth2配置
      * 需要增加swagger授权回调地址
@@ -109,15 +126,15 @@ public class Swagger2Config implements WebMvcConfigurer {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 // //大标题
-                .title("Jeecg-Boot 后台服务API接口文档")
+                .title("lengbingkeji-Boot 后台服务API接口文档")
                 // 版本号
                 .version("1.0")
 //				.termsOfServiceUrl("NO terms of service")
                 // 描述
                 .description("后台API接口")
                 // 作者
-                .contact(new Contact("北京国炬信息技术有限公司","www.jeccg.com","jeecgos@163.com"))
-               // .contact("JEECG团队")
+                .contact(new Contact("冷冰科技","http://www.lengbingkeji.com","1517699467@qq.com"))
+               // .contact("冷冰科技研发团队")
                 .license("The Apache License, Version 2.0")
                 .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html")
                 .build();

@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jeecgframework.boot</groupId>
   <artifactId>lengbingkeji-boot-parent</artifactId>
@@ -67,8 +69,8 @@
 	<modules>
         <module>lengbingkeji-boot-base</module>
         <module>lengbingkeji-boot-module-demo</module>
-        <module>lengbingkeji-boot-module-system</module>
         <module>lengbingkeji-boot-module-lbkj</module>
+		<module>lengbingkeji-boot-module-system</module>
     </modules>
 
 	<distributionManagement>
@@ -207,6 +209,7 @@
 				<artifactId>lengbingkeji-boot-starter-shardingsphere</artifactId>
 				<version>${jeecgboot.version}</version>
 			</dependency>
+			<!--hibernate-core-->
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-core</artifactId>
@@ -218,6 +221,7 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
+			<!--hibernate-re-->
 			<dependency>
 				<groupId>org.jeecgframework.boot</groupId>
 				<artifactId>hibernate-re</artifactId>

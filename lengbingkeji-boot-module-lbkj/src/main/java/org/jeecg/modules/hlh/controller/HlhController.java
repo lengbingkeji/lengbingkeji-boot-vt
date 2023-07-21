@@ -22,7 +22,7 @@ public class HlhController {
     @GetMapping(value = "/wztolh")
     public Result<String> wztolh(){
         Result<String> result = new Result<String>();
-        result.setResult("hwz to hlh!");
+        result.setResult("hwz to hlh！！！");
         return result;
     }
 }
