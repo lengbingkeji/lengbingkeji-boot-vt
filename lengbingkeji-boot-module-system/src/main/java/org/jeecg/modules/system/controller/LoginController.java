@@ -499,6 +499,7 @@ public class LoginController {
 	 * @return
 	 * @throws Exception
 	 */
+	@ApiOperation(value = "uniApp登录接口", notes = "uniApp登录接口")
 	@RequestMapping(value = "/mLogin", method = RequestMethod.POST)
 	public Result<JSONObject> mLogin(@RequestBody SysLoginModel sysLoginModel) throws Exception {
 		Result<JSONObject> result = new Result<JSONObject>();
@@ -506,7 +507,9 @@ public class LoginController {
 		String password = sysLoginModel.getPassword();
 		
 		//1. 校验用户是否有效
+		//查找数据库是否存在该用户
 		SysUser sysUser = sysUserService.getUserByName(username);
+		//判断用户是否存在、是否注销、是否冻结
 		result = sysUserService.checkUserIsEffective(sysUser);
 		if(!result.isSuccess()) {
 			return result;
